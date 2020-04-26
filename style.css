@@ -1,0 +1,78 @@
+body {
+  background: linear-gradient(0deg, rgb(36, 36, 36), rgb(56, 42, 42));
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* --- Панель интерфейса --- */
+
+/* Отступ сверху */
+.top {
+  height: 100px;
+}
+/* Панель */
+.interface {
+  padding: 10em;
+  border: 3px solid;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+}
+
+.cont {
+  width: 1700px;
+}
+
+/* Отображение SVG */
+.interface svg {
+  height: 700px;
+}
+section {
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Элементы интерфейса --- */
+
+/* Основа */
+.cls-1 {
+  fill: #666;
+}
+
+/* Имя */
+.cls-2 {
+  font-size: 90px;
+  fill: #fff;
+  font-family: Montserrat-BlackItalic, Montserrat;
+  font-style: italic;
+}
+/* Отступы между символами в имени */
+.cls-3 {
+  letter-spacing: 0.01em;
+}
+
+/* Собака */
+.cls-5 {
+  fill: #666;
+}
+
+/* Мяч */
+.cls-6 {
+  fill: #e5e5e5;
+}
+
+/* Полоски на мяче */
+.cls-8 {
+  fill: #c2000b;
+}
+
+/* Линии от мяча (индикаторы). display: visible; когда индикатор play = true */
+#lines {
+  fill: #c2000b;
+  box-shadow: 0 0 60px 30px #fff, /* inner white */ 0 0 100px 60px #f0f,
+    /* middle magenta */ 0 0 140px 90px #0ff; /* outer cyan */
+}
+.visibility {
+  display: none;
+}
